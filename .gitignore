@@ -9,3 +9,6 @@ tables/**
 # mentor reference artifacts
 artifacts/mentor_reference/**
 !artifacts/mentor_reference/.gitkeep
+docs/DEFINITIVE_PLAN_v4.md
+artifacts/mentor_reference/
+configs/detector_runtime.yaml
