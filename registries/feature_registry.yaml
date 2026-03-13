@@ -1,0 +1,59 @@
+version: "1.0.0"
+entries:
+  - feature_name: raw_maxproj_inner_mean_r3
+    family: patch_photometry
+    feature_group: patch_photometry
+    core_or_experimental: core_frozen
+    implementation: spotmeta.features.photometry.inner_mean
+    parameters: {radius_px: 3}
+    dependencies: [raw_maxproj]
+    output_columns: [raw_maxproj_inner_mean_r3]
+    source_view_id: raw_maxproj
+    source_preprocessing_id: raw
+    statistic: inner_mean
+    window_definition: disk_r3
+    null_policy: never_null_if_union_valid
+    dtype: float64
+    units: intensity
+    expected_directionality: higher_may_indicate_signal
+    version: "1.0.0"
+    status: implemented
+    notes: example frozen baseline photometry feature
+  - feature_name: white_local_maxproj_contrast_r3_r6
+    family: patch_photometry
+    feature_group: patch_photometry
+    core_or_experimental: core_frozen
+    implementation: spotmeta.features.photometry.ring_contrast
+    parameters: {inner_radius_px: 3, outer_radius_px: 6}
+    dependencies: [white_local_maxproj]
+    output_columns: [white_local_maxproj_contrast_r3_r6]
+    source_view_id: white_local_maxproj
+    source_preprocessing_id: white_local
+    statistic: contrast
+    window_definition: disk_r3_minus_ring_r6
+    null_policy: never_null_if_union_valid
+    dtype: float64
+    units: normalized_intensity
+    expected_directionality: higher_indicates_peak_over_background
+    version: "1.0.0"
+    status: implemented
+    notes: example frozen baseline contrast feature
+  - feature_name: proposer_support_fraction
+    family: consensus
+    feature_group: proposer_consensus
+    core_or_experimental: core_frozen
+    implementation: spotmeta.features.consensus.proposer_support_fraction
+    parameters: {}
+    dependencies: [candidate_union]
+    output_columns: [proposer_support_fraction]
+    source_view_id: null
+    source_preprocessing_id: null
+    statistic: support_fraction
+    window_definition: none
+    null_policy: never_null_if_union_valid
+    dtype: float64
+    units: fraction
+    expected_directionality: higher_may_indicate_confidence
+    version: "1.0.0"
+    status: implemented
+    notes: example frozen baseline consensus feature

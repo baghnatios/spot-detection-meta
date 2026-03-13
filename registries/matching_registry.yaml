@@ -1,0 +1,17 @@
+version: "1.0.0"
+entries:
+  - id: hungarian_radius_match_v1
+    family: bipartite_matching
+    implementation: spotmeta.truth.matching.hungarian_radius_match
+    parameters: {truth_match_radius_px: null}
+    dependencies: [candidate_union, annotations]
+    output_columns: [candidate_to_truth_match]
+    matching_algorithm: hungarian
+    truth_match_radius_px: null
+    distance_metric: euclidean
+    one_to_one_enforced: true
+    uncertain_handling: exclude
+    tie_break_policy: deterministic_by_distance_then_id
+    version: "1.0.0"
+    status: validated
+    notes: frozen baseline matching policy

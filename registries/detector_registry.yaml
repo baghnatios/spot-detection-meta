@@ -1,0 +1,92 @@
+version: "1.0.0"
+entries:
+  - id: mentor_v1
+    family: mentor_reference
+    implementation: spotmeta.mentor.detectors.mentor_v1
+    parameters: {}
+    dependencies: [raw]
+    output_columns: [pts, score]
+    primitive_or_aggregator: primitive
+    input_preprocessing_id: raw
+    input_projection_id: null
+    score_type: detector_specific
+    score_is_calibrated: false
+    coordinate_semantics: fit_centroid
+    duplicate_policy: detector_defined
+    expected_scale_px: null
+    requires_cache: false
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4
+  - id: mentor_v2
+    family: mentor_reference
+    implementation: spotmeta.mentor.detectors.mentor_v2
+    parameters: {}
+    dependencies: [raw]
+    output_columns: [pts, score]
+    primitive_or_aggregator: primitive
+    input_preprocessing_id: raw
+    input_projection_id: null
+    score_type: detector_specific
+    score_is_calibrated: false
+    coordinate_semantics: fit_centroid
+    duplicate_policy: detector_defined
+    expected_scale_px: null
+    requires_cache: false
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4
+  - id: consensus_v2
+    family: consensus
+    implementation: spotmeta.detect.proposers.consensus_v2_proposer
+    parameters: {}
+    dependencies: [candidate_raw]
+    output_columns: [pts, score]
+    primitive_or_aggregator: aggregator
+    input_preprocessing_id: null
+    input_projection_id: null
+    score_type: consensus_score
+    score_is_calibrated: false
+    coordinate_semantics: medoid_like
+    duplicate_policy: premerged
+    expected_scale_px: null
+    requires_cache: true
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4
+  - id: matched_filter_v2
+    family: matched_filter
+    implementation: spotmeta.detect.proposers.matched_filter_v2_proposer
+    parameters: {}
+    dependencies: [raw]
+    output_columns: [pts, score]
+    primitive_or_aggregator: primitive
+    input_preprocessing_id: raw
+    input_projection_id: null
+    score_type: ncc_like
+    score_is_calibrated: false
+    coordinate_semantics: local_maximum
+    duplicate_policy: detector_defined
+    expected_scale_px: null
+    requires_cache: false
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4
+  - id: sk_log
+    family: blob_detection
+    implementation: spotmeta.detect.classical.skimage_blob_log
+    parameters: {min_sigma_px: null, max_sigma_px: null, threshold: null}
+    dependencies: [log_normalized]
+    output_columns: [pts, score]
+    primitive_or_aggregator: primitive
+    input_preprocessing_id: log_normalized
+    input_projection_id: maxproj
+    score_type: response_peak
+    score_is_calibrated: false
+    coordinate_semantics: local_maximum
+    duplicate_policy: detector_defined
+    expected_scale_px: null
+    requires_cache: true
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4

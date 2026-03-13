@@ -1,0 +1,11 @@
+
+# v4 registries are tracked
+!registries/*.yaml
+
+# generated tables
+tables/**
+!tables/.gitkeep
+
+# mentor reference artifacts
+artifacts/mentor_reference/**
+!artifacts/mentor_reference/.gitkeep

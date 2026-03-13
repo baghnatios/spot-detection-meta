@@ -1,0 +1,66 @@
+version: "1.0.0"
+entries:
+  - id: raw
+    family: intensity
+    implementation: spotmeta.preprocess.transforms.identity
+    parameters: {}
+    dependencies: []
+    output_columns: [image]
+    input_modality: panel_or_projection_image
+    output_semantics: raw intensity image
+    deterministic: true
+    cache_policy: cache_per_source_image
+    valid_source_views: [panel, maxproj, meanproj]
+    comparable_across_crops: false
+    comparable_across_wells: false
+    version: "1.0.0"
+    status: validated
+    notes: canonical raw image baseline
+  - id: norm01
+    family: normalization
+    implementation: spotmeta.preprocess.transforms.percentile_normalize
+    parameters: {lower_pct: 1.0, upper_pct: 99.0}
+    dependencies: [raw]
+    output_columns: [image]
+    input_modality: panel_or_projection_image
+    output_semantics: percentile normalized intensity
+    deterministic: true
+    cache_policy: cache_per_source_image
+    valid_source_views: [panel, maxproj, meanproj]
+    comparable_across_crops: partially
+    comparable_across_wells: partially
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4
+  - id: white_local
+    family: normalization
+    implementation: spotmeta.preprocess.transforms.local_whiten
+    parameters: {sigma_px: null}
+    dependencies: [raw]
+    output_columns: [image]
+    input_modality: panel_or_projection_image
+    output_semantics: local whitening transform
+    deterministic: true
+    cache_policy: cache_per_source_image
+    valid_source_views: [panel, maxproj, meanproj]
+    comparable_across_crops: partially
+    comparable_across_wells: partially
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4
+  - id: peak_bg
+    family: enhancement
+    implementation: spotmeta.preprocess.transforms.gaussian_difference
+    parameters: {sigma_small_px: null, sigma_large_px: null}
+    dependencies: [raw]
+    output_columns: [image]
+    input_modality: panel_or_projection_image
+    output_semantics: spot-enhanced residual
+    deterministic: true
+    cache_policy: cache_per_source_image
+    valid_source_views: [panel, maxproj, meanproj]
+    comparable_across_crops: partially
+    comparable_across_wells: partially
+    version: "1.0.0"
+    status: implemented
+    notes: retained from v4

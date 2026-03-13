@@ -1,0 +1,16 @@
+version: "1.0.0"
+entries:
+  - id: baseline_annotation_policy
+    family: manual_truth
+    implementation: spotmeta.truth.annotation_policy.baseline
+    parameters: {}
+    dependencies: []
+    output_columns: [annotations]
+    allowed_labels: [TRUE_SPOT, UNCERTAIN]
+    default_negative_policy: derive_from_unmatched_candidates
+    refinement_policy: local_peak_refinement_if_enabled
+    exclusion_policy: exclusion_regions_supported
+    uncertain_policy: exclude_from_binary_training
+    version: "1.0.0"
+    status: validated
+    notes: frozen baseline annotation policy
