@@ -1,0 +1,305 @@
+format: spotmeta_crop_registry
+n_rows: 20
+records:
+- crop_id: crop_C8_ee618c955453
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 0
+  well_xmin_px: 5632
+  well_ymax_px: 512
+  well_xmax_px: 6144
+  selection_tags:
+  - bright
+  - dense
+  - edge_artifact
+  selection_rationale: image-driven initial crop; primary_tag=bright; mean=5612.499;
+    std=4517.890; q99=20752.000; edge=415.828; closepair=1313.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_2b6411e62d9d
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 0
+  well_xmin_px: 6656
+  well_ymax_px: 512
+  well_xmax_px: 7168
+  selection_tags:
+  - bright
+  - dense
+  - edge_artifact
+  selection_rationale: image-driven initial crop; primary_tag=edge_artifact; mean=6135.642;
+    std=4367.002; q99=18816.000; edge=459.042; closepair=1318.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_49b3266fc66f
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 0
+  well_xmin_px: 7168
+  well_ymax_px: 512
+  well_xmax_px: 7680
+  selection_tags:
+  - bright
+  - dense
+  - edge_artifact
+  selection_rationale: image-driven initial crop; primary_tag=dense; mean=6019.374;
+    std=4657.119; q99=19088.000; edge=505.612; closepair=1312.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_d71f1d65aa4c
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 1024
+  well_xmin_px: 4608
+  well_ymax_px: 1536
+  well_xmax_px: 5120
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=3550.899;
+    std=3554.679; q99=16208.000; edge=300.779; closepair=1328.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_a16441f9cb61
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 1792
+  well_xmin_px: 1792
+  well_ymax_px: 2304
+  well_xmax_px: 2304
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=3924.272;
+    std=3958.614; q99=17408.000; edge=318.843; closepair=1324.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_d18881d50a37
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 2048
+  well_xmin_px: 2304
+  well_ymax_px: 2560
+  well_xmax_px: 2816
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=4013.290;
+    std=3942.613; q99=16624.000; edge=326.581; closepair=1321.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_e4412c5963fc
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 2304
+  well_xmin_px: 2816
+  well_ymax_px: 2816
+  well_xmax_px: 3328
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=3858.243;
+    std=3922.452; q99=17104.000; edge=309.878; closepair=1321.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_f7f7c4173888
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 4096
+  well_xmin_px: 6656
+  well_ymax_px: 4608
+  well_xmax_px: 7168
+  selection_tags:
+  - close_pair
+  selection_rationale: image-driven initial crop; primary_tag=close_pair; mean=2345.729;
+    std=2413.324; q99=10752.000; edge=165.561; closepair=1336.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_1ffcd18f3eed
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 6912
+  well_xmin_px: 7168
+  well_ymax_px: 7424
+  well_xmax_px: 7680
+  selection_tags:
+  - dim
+  - sparse
+  selection_rationale: image-driven initial crop; primary_tag=sparse; mean=1482.426;
+    std=1207.657; q99=8752.000; edge=77.345; closepair=1311.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_C8_f68e7e5709ad
+  dataset_id: dataset_default
+  well_id: C8
+  well_ymin_px: 7168
+  well_xmin_px: 1280
+  well_ymax_px: 7680
+  well_xmax_px: 1792
+  selection_tags:
+  - close_pair
+  - dim
+  - sparse
+  selection_rationale: image-driven initial crop; primary_tag=dim; mean=1271.067;
+    std=1107.510; q99=7472.000; edge=65.695; closepair=1323.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_581c052a15b9
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 0
+  well_xmin_px: 3328
+  well_ymax_px: 512
+  well_xmax_px: 3840
+  selection_tags:
+  - bright
+  - dense
+  - edge_artifact
+  selection_rationale: image-driven initial crop; primary_tag=edge_artifact; mean=4978.838;
+    std=4359.854; q99=17024.000; edge=457.720; closepair=1318.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_7946234d28cd
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 512
+  well_xmin_px: 2304
+  well_ymax_px: 1024
+  well_xmax_px: 2816
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=4812.591;
+    std=4409.571; q99=17360.000; edge=436.393; closepair=1323.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_0a071dcf71bd
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 1024
+  well_xmin_px: 2048
+  well_ymax_px: 1536
+  well_xmax_px: 2560
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=4626.213;
+    std=4314.544; q99=17632.000; edge=433.270; closepair=1327.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_c59003e258cd
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 1280
+  well_xmin_px: 3584
+  well_ymax_px: 1792
+  well_xmax_px: 4096
+  selection_tags:
+  - bright
+  - dense
+  selection_rationale: image-driven initial crop; primary_tag=dense; mean=4288.688;
+    std=4752.614; q99=21440.000; edge=414.493; closepair=1313.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_d584a63884c5
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 1792
+  well_xmin_px: 2560
+  well_ymax_px: 2304
+  well_xmax_px: 3072
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=4905.126;
+    std=4638.871; q99=18800.000; edge=453.797; closepair=1326.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_4e79e101140b
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 2304
+  well_xmin_px: 2560
+  well_ymax_px: 2816
+  well_xmax_px: 3072
+  selection_tags:
+  - bright
+  - close_pair
+  - dense
+  - mixed
+  selection_rationale: image-driven initial crop; primary_tag=mixed; mean=4596.967;
+    std=4633.523; q99=18320.000; edge=429.712; closepair=1321.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_efe3a4ee13ea
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 5120
+  well_xmin_px: 5632
+  well_ymax_px: 5632
+  well_xmax_px: 6144
+  selection_tags:
+  - dim
+  - sparse
+  selection_rationale: image-driven initial crop; primary_tag=dim; mean=1110.712;
+    std=692.811; q99=2112.000; edge=46.190; closepair=1313.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_a0315ff01f4a
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 5376
+  well_xmin_px: 6656
+  well_ymax_px: 5888
+  well_xmax_px: 7168
+  selection_tags:
+  - close_pair
+  - dim
+  - sparse
+  selection_rationale: image-driven initial crop; primary_tag=close_pair; mean=1726.638;
+    std=1617.792; q99=8496.000; edge=102.448; closepair=1343.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_fbb89b0a07aa
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 6656
+  well_xmin_px: 2304
+  well_ymax_px: 7168
+  well_xmax_px: 2816
+  selection_tags:
+  - bright
+  - dense
+  selection_rationale: image-driven initial crop; primary_tag=bright; mean=4071.931;
+    std=5782.598; q99=28496.000; edge=299.527; closepair=1311.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
+- crop_id: crop_D8_fefe406bf798
+  dataset_id: dataset_default
+  well_id: D8
+  well_ymin_px: 6912
+  well_xmin_px: 7168
+  well_ymax_px: 7424
+  well_xmax_px: 7680
+  selection_tags:
+  - close_pair
+  - dim
+  - sparse
+  selection_rationale: image-driven initial crop; primary_tag=sparse; mean=1346.813;
+    std=86.228; q99=1568.000; edge=50.764; closepair=1355.0
+  annotator_status: pending
+  crop_registry_version: v1_draft
